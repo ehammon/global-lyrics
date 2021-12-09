@@ -1,0 +1,9 @@
+:root {
+    --green: #1DB954;
+    --cream: #F4D6A8;
+    background-color: var(--green);
+}
+
+.title {
+    background-color: var(--cream);
+}
