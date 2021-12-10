@@ -15,7 +15,7 @@ $.ajax(settings).done(function (response) {
 });
 
 // google translate 'translate'
-onst settings = {
+const settings = {
 	"async": true,
 	"crossDomain": true,
 	"url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
