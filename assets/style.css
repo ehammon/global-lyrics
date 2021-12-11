@@ -1,7 +1,6 @@
 :root {
     --green: #1DB954;
     --cream: #F4D6A8;
-    background-color: var(--green);
 }
 
 body {
@@ -20,7 +19,7 @@ header {
     border-width: 5px;
     border-style: round;
     border-color: #376346;
-
+  
     /* position: relative; */
 }
 
@@ -76,4 +75,9 @@ footer {
     border: inset;
     border-width: 5px;
     border-color: #376346;
+}
+
+h1, h2, p{
+    color: var(--cream);
+  
 }
