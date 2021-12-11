@@ -1,16 +1,15 @@
 :root {
     --green: #1DB954;
     --cream: #F4D6A8;
-}
-
-body {
     background-color: var(--green);
 }
-
+body {
+    background-color: var(--green);
+    background-image: linear-gradient(45deg, #045721 15%, #1DB954 50%, #02491bef 60%);
+}
 header {
-
     background-color: var(--cream);
-    color: var(--green);
+    color: black;
     /* margin-top: 100px; */
     /* margin-left: 100px; */
     margin-right: 700px;
@@ -18,11 +17,9 @@ header {
     border: inset;
     border-width: 5px;
     border-style: round;
-    border-color: #376346;
-  
+    border-color: #3D2F1A;
     /* position: relative; */
 }
-
 img {
     /* position: relative; */
     flex-wrap: wrap;
@@ -30,32 +27,27 @@ img {
     max-height:50%;
     /* margin-top: 20px; */
     float: right;
-    clear: bottom; 
-    
+    clear: bottom;
 }
-
 .image {
     position: absolute;
     right: -58px;
     top: -65px;
 }
-
 .translate {
     background-color: var(--cream);
     margin-right: 1100px;
     margin-bottom: 150px;
-    color: var(--green);
+    color: black;
     border: solid;
     border: inset;
     border-width: 5px;
-    border-color: #376346;
+    border-color: #3D2F1A;
 }
-
 .translate h2 {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .lyrics {
     background-color: var(--cream);
     float: right;
@@ -64,20 +56,20 @@ img {
     border: solid;
     border: inset;
     border-width: 5px;
-    border-color: #376346;
+    border-color: #3D2F1A;
 }
-
+#songName {
+    border: solid;
+    border: inset;
+    background-color: var(--cream);
+    border-color: #3D2F1A;
+}
 footer {
     background-color: var(--cream);
     margin: 0 0 150 0;
-    color: #3d2f1a;
+    color: #3D2F1A;
     border: solid;
     border: inset;
     border-width: 5px;
-    border-color: #376346;
-}
-
-h1, h2, p{
-    color: var(--cream);
-  
+    border-color: #3D2F1A;
 }

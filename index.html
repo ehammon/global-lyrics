@@ -12,59 +12,46 @@
 </head>
 
 <body>
-
-    <header>
-        <div id="title">
-            <div class="title grid-y" id="title1">
-                <h1>Global Lyrics</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Rem inventore eum corrupti
-                    quae consequatur quasi totam amet, soluta sed
-                    odit, laborum quos maiores vitae ducimus quibusdam
-                    praesentium libero accusamus iusto?</p>
-                <div class="image">
-                    <img src="assets/images/global lyrics (3).png">
-                </div>
-            </div>
-      </div>
-  </header>
-
+    <div class="title grid-x">
+        <div class="cell medium-9">
+            <h1>Global Lyrics</h1>
+            <p>Placeholder</p>
+        </div>
+        <div class="logo cell medium-3">
+            <img src="./assets/images/global lyrics (3).png">
+        </div>
+    </div>
     <section class="translate">
         <div>
             <h2>Translate</h2>
         </div>
     </section>
-
     <section class="lyrics">
         <div>
             <h2>Lyrics</h2>
         </div>
     </section>
-
         <section class="search">
         <!-- Trigger/Open The Modal -->
         <button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-
-    <input id="songName" type="text"/>
-    <button id="search-button">Search</button>
-
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-</div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <input id="songName" type="text"/>
+                <button id="search-button">Search</button>
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+                </div>
+            </div>
     </section>
-
-        <section id="savedLyrics">
+    <footer>
+        <section>
             <div>
                 <h2>Saved Lyrics</h2>
             </div>
         </section>
-
+    </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
 <script src="./assets/script.js"></script>
