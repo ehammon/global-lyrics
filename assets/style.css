@@ -6,7 +6,7 @@
 
     background-color: var(--green);
 }
-
+*
 body {
     background-color: var(--green);
     background-image: linear-gradient(45deg, #045721 15%, #1DB954 50%, #02491bef 60%);
@@ -97,5 +97,5 @@ footer {
     border: inset;
     border-width: 5px;
     border-color: var(--border);
-    padding-bottom: 400px;
+    padding-bottom: 100px;
 }
