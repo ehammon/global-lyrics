@@ -12,30 +12,39 @@
 </head>
 
 <body>
-    <div class="title grid-x">
+
+    <div class="logo cell medium-3">
+        <img src="./assets/images/global lyrics (3).png">
+    </div>
+    <div class="title grid-x" id="pgInfo">
         <div class="cell medium-9">
             <h1>Global Lyrics</h1>
-            <p>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Dolorum impedit<br> aliquam incidunt
-                maiores vitae molestias quaerat maxime
-                officiis possimus fuga,<br> error nesciunt
-                eum quis, sed quae eaque harum animi. Labore.</p>
+            <p>A lyric translating web page that allows you
+                to take any lyrics you want and translate them 
+                into any language you want. Utilizing the best 
+                of the best translating and lyric search tools 
+                available to bring you the best experience possible.
+                
+            </p>
         </div>
-        <div class="logo cell medium-3">
+        <!-- <div class="logo cell medium-3">
             <img src="./assets/images/global lyrics (3).png">
-        </div>
+        </div> -->
     </div>
+    
     <section class="translate">
         <div>
-            <h2>Translate</h2>
+            <h2>Translation</h2>
+            <input id="translateSong" type="text" />
+            <button id="transBtn">Translate</button>
         </div>
     </section>
     <section class="lyrics">
         <div>
             <h2>Lyrics</h2>
-            <input id="songName" type="text" />
-            <button id="searchBtn"></button>
+            <input id="songName" type="text autofocus="true" class="form-input" />
+            <label class="form-lable" for="Lyrics"></label>
+            <button id="searchBtn">Search</button>
 
         </div>
     </section>
@@ -58,6 +67,9 @@
 
         </div>
     </section>
+
+
+
     <footer>
         <section>
             <div>
@@ -65,9 +77,10 @@
             </div>
         </section>
     </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-<script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>

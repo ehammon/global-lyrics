@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-//genius API
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://genius.p.rapidapi.com/artists/16775/songs",
-=======
 const clickSearch = function() {
 	let inputValue = $("#songName").val()
 	console.log(inputValue);
@@ -16,9 +9,9 @@ const clickSearch = function() {
 const getLyrics = function(songTitle) {
 const settings = {
 	"async": true,
-	"crossDomain": true,
+	"crossDomain": true,	
+
 	"url": `https://genius.p.rapidapi.com/search?q=${songTitle}`,
->>>>>>> ca4a087ff038a7df1a72cacd93af167ec3a74ceb
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "genius.p.rapidapi.com",
@@ -26,14 +19,6 @@ const settings = {
 	}
 };
 
-<<<<<<< HEAD
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
-
-// google translate 'translate'
-const settings = {
-=======
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
@@ -44,7 +29,6 @@ $("#search-button").on("click", clickSearch);
 
 // google translate 'translate'
 const translateSettings = {
->>>>>>> ca4a087ff038a7df1a72cacd93af167ec3a74ceb
 	"async": true,
 	"crossDomain": true,
 	"url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
@@ -62,13 +46,36 @@ const translateSettings = {
 	}
 };
 
-<<<<<<< HEAD
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
-=======
 $.ajax(translateSettings).done(function (response) {
 	console.log(response);
 });
+
+// var songName = document.getElementsByName("#songName").options.length;
+
+var searchBtn = $("#searchBtn");
+(searchBtn).on("click", function () {
+	console.log("I have been clicked"); 
+	var songName = $("#songName");
+	console.log(songName.val());
+	const settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://genius.p.rapidapi.com/search?q="+songName.val(),
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "genius.p.rapidapi.com",
+			"x-rapidapi-key": "2da096b016msh4eb9721ad5715a3p16841cjsnfd3b68cc2483"
+		}
+	};
 	
->>>>>>> ca4a087ff038a7df1a72cacd93af167ec3a74ceb
+	$.ajax(settings).done(function (response) {
+		console.log(response);
+	});
+})
+
+var transBtn = $("#transBtn");
+(transBtn).on("click", function () {
+	console.log("translated");
+	var translateSong = $("#translateSong");
+	console.log(translateSong.val());
+})
