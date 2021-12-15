@@ -1,76 +1,148 @@
 :root {
     --green: #1DB954;
     --cream: #F4D6A8;
+    --border: #3D2f1a;
+    --text: black;
+
     background-color: var(--green);
 }
-body {
+
+* body {
     background-color: var(--green);
     background-image: linear-gradient(45deg, #045721 15%, #1DB954 50%, #02491bef 60%);
 }
-header {
-    background-color: var(--cream);
-    color: black;
-    /* margin-top: 100px; */
-    /* margin-left: 100px; */
-    margin-right: 700px;
-    margin-bottom:100px;
+
+#pgInfo {
+    color: var(--text);
+    margin-right: 1250px;
+    margin-bottom: 100px;
     border: inset;
     border-width: 5px;
     border-style: round;
-    border-color: #3D2F1A;
-    /* position: relative; */
+    border-color: var(--border);
+    background-image: linear-gradient(57deg, #f7cf94 15%, #f1b459 90%);
+    padding-bottom: -250px;
+    padding-left: -50px;
 }
+
+h1 {
+    color: #382a15;
+}
+
+p {
+    margin-right: 50px;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
 img {
     /* position: relative; */
     flex-wrap: wrap;
-    max-width: 50%;
-    max-height:50%;
+    max-width: 70%;
+    max-height: 70%;
     /* margin-top: 20px; */
     float: right;
     clear: bottom;
 }
+
 .image {
     position: absolute;
     right: -58px;
     top: -65px;
 }
+
 .translate {
-    background-color: var(--cream);
-    margin-right: 1100px;
+    background-image: linear-gradient(57deg, #f7cf94 15%, #f1b459 90%);
+    margin-right: 1700px;
     margin-bottom: 150px;
-    color: black;
+    color: var(--text);
     border: solid;
     border: inset;
     border-width: 5px;
-    border-color: #3D2F1A;
+    border-color: #02491b;
 }
+
+.translate h2 {
+    color: #3D2f1a;
+}
+
 .translate h2 {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.lyrics {
-    background-color: var(--cream);
-    float: right;
-    margin-right: 200px;
-    margin-top: -100px;
+
+
+#translateSong {
+    background-color: #f7cf94;
     border: solid;
     border: inset;
     border-width: 5px;
-    border-color: #3D2F1A;
+    border-color: #fab54d;
 }
+
+#transBtn {
+    border: solid;
+    border-width: 3px;
+    border: inset;
+    border-color: #fab54d;
+    color: #3D2f1a;
+    background-color: #f7cf94;
+}
+
+.lyrics {
+    background-image: linear-gradient(57deg, #f7cf94 15%, #f1b459 90%);
+    float: right;
+    margin-right: 300px;
+    margin-top: -300px;
+    border: solid;
+    border: inset;
+    border-width: 5px;
+    border-color: #013a15;
+    padding-top: -10px;
+    padding-bottom: -35px;
+}
+
+.lyrics h2 {
+    color: #3D2f1a;
+}
+
 #songName {
     border: solid;
     border: inset;
-    background-color: var(--cream);
-    border-color: #3D2F1A;
+    border-width: 5px;
+    background-color: #f7cf94;
+    border-color: #fab54d;
+
 }
+
+#searchBtn {
+    border: solid;
+    border-width: 3px;
+    border: inset;
+    border-color: #fab54d;
+    color: #3D2f1a;
+    background-color: #f7cf94;
+}
+
+#myModal {
+    width: 100%;
+    padding: 0 1000px 0 0;
+}
+
 footer {
+    background-image: linear-gradient(57deg, #f7cf94 15%, #f1b459 90%);
     background-color: var(--cream);
-    margin: 0 0 150 0;
-    color: #3D2F1A;
+    /* margin: 0 0 150 0; */
+    color: #3D2f1a;
     border: solid;
     border: inset;
     border-width: 5px;
+<<<<<<< HEAD
     border-color: #3D2F1A;
 }
 
+=======
+    border-color: #03812f;
+    padding-bottom: 119px;
+}
+>>>>>>> 0c50ff485c2217821228da79f396f2b8a57ecaa0

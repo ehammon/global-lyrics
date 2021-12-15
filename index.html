@@ -12,49 +12,87 @@
 </head>
 
 <body>
-    <div class="title grid-x">
+
+    <div class="logo cell medium-3">
+        <img src="./assets/images/global lyrics (3).png">
+    </div>
+    <div class="title grid-x" id="pgInfo">
         <div class="cell medium-9">
             <h1>Global Lyrics</h1>
-            <p>Placeholder</p>
+            <p>A lyric translating web page that allows you
+                to take any lyrics you want and translate them 
+                into any language you want. Utilizing the best 
+                of the best translating and lyric search tools 
+                available to bring you the best experience possible.
+                
+            </p>
         </div>
-        <div class="logo cell medium-3">
+        <!-- <div class="logo cell medium-3">
             <img src="./assets/images/global lyrics (3).png">
-        </div>
+        </div> -->
     </div>
+    
     <section class="translate">
         <div>
-            <h2>Translate</h2>
+            <h2>Translation</h2>
+            <input id="translateSong" type="text" />
+            <button id="transBtn">Translate</button>
         </div>
     </section>
     <section class="lyrics">
         <div>
             <h2>Lyrics</h2>
+            <input id="songName" type="text autofocus="true" class="form-input" />
+            <label class="form-lable" for="Lyrics"></label>
+            <button id="searchBtn">Search</button>
+
         </div>
     </section>
-        <section class="search">
+
+    <section class="search">
         <!-- Trigger/Open The Modal -->
+<<<<<<< HEAD
         <button id="myBtn">Search</button>
+=======
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+>>>>>>> 0c50ff485c2217821228da79f396f2b8a57ecaa0
         <!-- The Modal -->
         <div id="myModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
+<<<<<<< HEAD
                 <input id="songName" type="text"/>
                 <button id="search-button">Search</button>
                 <span class="close">&times;</span>
                 <p>Search for a song</p>
                 </div>
+=======
+
+                <!-- <input id="songName" type="text"/>
+                <button id="searchBtn">Search</button> -->
+
+                <!-- <span class="close">&times;</span> -->
+                <!-- <p>Some text in the Modal..</p>  -->
+>>>>>>> 0c50ff485c2217821228da79f396f2b8a57ecaa0
             </div>
+
+        </div>
     </section>
+
+
+
     <footer>
         <section>
             <div>
-                <h2>Saved Lyrics</h2>
+                <h2>Saved Songs</h2>
             </div>
         </section>
     </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-<script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
