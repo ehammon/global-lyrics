@@ -3,6 +3,8 @@
 
 const clickSearch = function() {
 	let inputValue = $("#songName").val()
+	console.log(inputValue);
+	getLyrics(inputValue);
 	window.localStorage.setItem('Song', inputValue, JSON.stringify());
 	for(var i = 0; i < inputValue.length; i++){
 		inputValue.push(inputValue[i]);
@@ -56,37 +58,5 @@ $.ajax(translateSettings).done(function (response) {
 	console.log(response);
 });
 
-<<<<<<< HEAD
 
 
-=======
-// var songName = document.getElementsByName("#songName").options.length;
-
-var searchBtn = $("#searchBtn");
-(searchBtn).on("click", function () {
-	console.log("I have been clicked"); 
-	var songName = $("#songName");
-	console.log(songName.val());
-	const settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://genius.p.rapidapi.com/search?q="+songName.val(),
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": "genius.p.rapidapi.com",
-			"x-rapidapi-key": "2da096b016msh4eb9721ad5715a3p16841cjsnfd3b68cc2483"
-		}
-	};
-	
-	$.ajax(settings).done(function (response) {
-		console.log(response);
-	});
-})
-
-var transBtn = $("#transBtn");
-(transBtn).on("click", function () {
-	console.log("translated");
-	var translateSong = $("#translateSong");
-	console.log(translateSong.val());
-})
->>>>>>> 0c50ff485c2217821228da79f396f2b8a57ecaa0
